@@ -1,7 +1,7 @@
 node{
       def mvnHome = tool name: 'maven 3.5.4', type: 'maven' 
       stage('Checkout'){
-         git 'https://github.com/LovesCloud/java-tomcat-maven-example'
+         git 'https://github.com/LovesCloud/java-tomcat-demo-app'
        
       }  
       stage('Build'){
@@ -14,7 +14,7 @@ node{
     
       stage('Deploy') {     
             sshagent(['Tomcat-jenkins']) {
-               sh 'scp -o StrictHostKeyChecking=no target/tomcatdeploymnetdemo.war jenkins@35.193.54.220:/opt/tomcat/webapps'
+               sh 'scp -o StrictHostKeyChecking=no target/demopipeline1.war jenkins@35.193.54.220:/opt/tomcat/webapps'
               
           }
          

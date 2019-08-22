@@ -141,7 +141,7 @@
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
 
-               <h2>Jenkins Paramteterized Build and Triggers</h2>
+               <h2>Jenkins CI/CD Pipeline Demo</h2>
 
 
                 <div class="card-body">
